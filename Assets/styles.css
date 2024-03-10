@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+body{
+    background-color:  hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    padding: 11rem 7rem 7rem 11rem;
+}
+  
+main{
+    padding: 30px;
+    display: grid;
+    grid-template-areas: "sec aside"
+                         "sec aside"; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: hsl(0, 0%, 100%) ;
+    border-radius: 20px;
+    width: 900px;
+    height: 400px;
+}
+aside{
+    grid-area: aside;
+    border-radius: 20px;
+    background-color:  hsl(183, 100%, 15%);
+    width: 380px; 
+    height: 320px;
+    padding: 30px;
+    
+}
+section{
+    width: 450px;
+    height: 400px;
+    grid-area: sec;
+}
+#billIn{
+    background-color:  hsl(189, 41%, 97%);
+    padding: 10px 100px 30px 130px;
+    border: none;
+    font-family: 'Space Mono', monospace; /* Specify the font family */
+    font-size: 23px; /* Set the font size */
+    font-weight: 700;
+}
+#billIn:focus{
+    background-color:   hsl(189, 41%, 97%);
+    padding: 10px 100px 30px 130px;
+    border: hsl(172, 67%, 45%);
+}
+
+
+#bill{
+    padding: 0px 0px 30px 0px;
+}
+#NumOfP{
+    padding: 10px 80px 10px 50px;
+    background-color:  hsl(189, 41%, 97%);
+    border: none;
+    font-family: 'Space Mono', monospace; /* Specify the font family */
+    font-size: 23px; /* Set the font size */
+    font-weight: 700;
+    border-radius: 5px;
+}
+#NumOfP:focus{
+    background-color:  hsl(189, 41%, 97%);
+    padding: 10px 80px 10px 50px;
+    border: hsl(172, 67%, 45%);
+    font-family: 'Space Mono', monospace; /* Specify the font family */
+    font-size: 23px; /* Set the font size */
+    font-weight: 700;
+    border-radius: 5px;
+}
+.icon {
+    padding-right: 25px;
+    background: url("./images/icon-dollar.svg") no-repeat right;
+    background-size: 20px;
+  }
+.button:hover{
+    background-color:  hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+
+}
+.button:focus{
+    background-color:  hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+.button{
+    padding: 15px 45px 15px 45px;
+    border-radius: 5px;
+    background-color:  hsl(183, 100%, 15%);
+    color: hsl(189, 41%, 97%);
+    border: none;
+    font-family: 'Space Mono', monospace; /* Specify the font family */
+    font-size: 23px; /* Set the font size */
+    font-weight: 700;
+}
+textarea:focus, input:focus {
+    border:  hsl(186, 14%, 43%);
+    color: hsl(183, 100%, 15%);
+}
+
+label{
+    color:  hsl(184, 14%, 56%);
+}
+.buttong{
+    width: 110px;
+    padding: 3px 9px;
+    height: 60px;
+    border-radius: 5px;
+    background-color:  hsl(189, 41%, 97%);
+    border: none;
+    font-family: 'Space Mono', monospace; /* Specify the font family */
+    font-size: 23px; /* Set the font size */
+    font-weight: 700;
+    
+}
+#row{
+    height: 74px;
+    padding: 0px 0px 10px 0px;
+    
+}
+button {
+    font-family: 'Space Mono', monospace; /* Specify the font family */
+    font-size: 23px; /* Set the font size */
+    font-weight: 700;
+    /* Set the font weight */
+    /* Add any other font styles as needed */
+  }
+
+h5{
+    padding-right: 2rem;
+}
+.value{
+    font-size: 50px;
+    color: hsl(172, 67%, 45%)
+    ;
+
+}
+.valuet{
+    font-size: 50px;
+    color: hsl(172, 67%, 45%)
+    ;
+
+}
+.first{
+    display: flex;
+}
+.text{
+    
+    margin-right: 120px;
+    
+}
+.text1{
+    
+    margin-right: 140px;
+    
+}
+.second{
+    display: flex;
+    
+}
+p{
+    margin: 0px;
+
+}
+
+#reset{
+    background-color: hsl(172, 67%, 45%);
+    padding: 0px 150px 0px 150px;
+    border-radius: 5px;
+    border: none;
+    color: hsl(183, 100%, 15%); ;
+}
+#reset:focus{
+    background-color: hsl(185, 41%, 84%);;
+}
+#resetdiv{
+    margin-top:140px;
+}
+#button{
+    padding: 15px 50px;
+}
