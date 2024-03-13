@@ -33,17 +33,36 @@ section{
     height: 400px;
     grid-area: sec;
 }
+.dollarbill{
+    position: relative;
+}
+.texttot{
+    font-size: 20px;
+    color:hsl(189, 41%, 97%);
+
+     
+     
+
+
+}
+
+.Inimg{
+    padding-top: 12.5px;
+    padding-left: 10px;
+    width: 15px;
+    position: absolute;
+}
 #billIn{
     background-color:  hsl(189, 41%, 97%);
-    padding: 10px 100px 30px 130px;
+    padding: 10px 90px 10px 60px;
     border: none;
     font-family: 'Space Mono', monospace; /* Specify the font family */
-    font-size: 23px; /* Set the font size */
+    font-size: 20px; /* Set the font size */
     font-weight: 700;
 }
 #billIn:focus{
     background-color:   hsl(189, 41%, 97%);
-    padding: 10px 100px 30px 130px;
+    padding: 10px 80px 30px 60px;
     border: hsl(172, 67%, 45%);
 }
 
@@ -101,6 +120,9 @@ textarea:focus, input:focus {
 label{
     color:  hsl(184, 14%, 56%);
 }
+.second{
+    display: flex;
+}
 .buttong{
     width: 110px;
     padding: 3px 9px;
@@ -145,19 +167,32 @@ h5{
     display: flex;
 }
 .text{
+    font-size: 20px;
+    color:hsl(189, 41%, 97%);
+   
+}
+.texttwo{
+   font-size: 17x;
+   color:   hsl(184, 14%, 56%);
+   margin-right: 140px;
     
-    margin-right: 120px;
+    
+    
     
 }
-.text1{
-    
+
+.textthree{
+    font-size: 17x;
+    color:   hsl(184, 14%, 56%);
     margin-right: 140px;
-    
-}
-.second{
-    display: flex;
-    
-}
+     
+     
+
+ 
+     
+     
+ }
+
 p{
     margin: 0px;
 
@@ -171,11 +206,95 @@ p{
     color: hsl(183, 100%, 15%); ;
 }
 #reset:focus{
-    background-color: hsl(185, 41%, 84%);;
+    background-color: hsl(185, 41%, 84%);
 }
 #resetdiv{
     margin-top:140px;
 }
 #button{
     padding: 15px 50px;
+}
+@media screen and (max-width: 768px)  {
+     
+main{
+    padding: 30px;
+    display: grid;
+    grid-template-areas: "sec "
+                         "aside"; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: hsl(0, 0%, 100%) ;
+    border-radius: 20px;
+    height: 900px;
+    width: 400px;
+}
+aside{
+    grid-area: aside;
+    border-radius: 20px;
+    background-color:  hsl(183, 100%, 15%);
+    width: 340px; 
+    height: 320px;
+    padding: 30px;
+    
+}
+section{
+    width: 450px;
+    height: 400px;
+    grid-area: sec;
+}
+
+#billIn{
+    background-color:  hsl(189, 41%, 97%);
+    padding: 10px 40px 10px 80px;
+    border: none;
+    font-family: 'Space Mono', monospace; /* Specify the font family */
+    font-size: 23px; /* Set the font size */
+    font-weight: 700;
+}
+#billIn:focus{
+    background-color:   hsl(189, 41%, 97%);
+    padding: 10px 40px 10px 80px;
+    border: hsl(172, 67%, 45%);
+}
+#bill{
+    padding: 0px 0px 5px 0px;
+}
+    
+
+#reset{
+    background-color: hsl(172, 67%, 45%);
+    padding: 0px 140px 0px 140px;
+    border-radius: 5px;
+    border: none;
+    color: hsl(183, 100%, 15%); ;
+}
+#resetdiv{
+    margin-top:130px;
+}
+#NumOfP{
+    padding: 10px 80px 10px 50px;
+    background-color:  hsl(189, 41%, 97%);
+    border: none;
+    font-family: 'Space Mono', monospace; /* Specify the font family */
+    font-size: 23px; /* Set the font size */
+    font-weight: 700;
+    border-radius: 5px;
+}
+#NumOfP:focus{
+    background-color:  hsl(189, 41%, 97%);
+    padding: 10px 80px 10px 50px;
+    border: hsl(172, 67%, 45%);
+    font-family: 'Space Mono', monospace; /* Specify the font family */
+    font-size: 23px; /* Set the font size */
+    font-weight: 700;
+    border-radius: 5px;
+}
+/* .tip{
+   
+    
+} */
+.NumOfPdiv{
+    padding: 0px 0px 5px 0px;
+
+}
 }

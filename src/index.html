@@ -7,7 +7,7 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="./src/styles.css" rel="stylesheet">
+  <link href="./styles.css" rel="stylesheet">
 
   <title>Frontend Mentor | Tip calculator app</title>
 
@@ -29,8 +29,10 @@
     <section id="sec">
       <div id="bill">
         <label> Bill</label>
-        <div>
+        <div class="dollarbill">
+          <img src="../Assets/images/icon-dollar.svg" class="Inimg" alt="Dollar">
           <input type="number" name="" id="billIn" class="icon" style="text-align:right;"> </input>
+
         </div>
       </div>
       <div>
@@ -39,48 +41,60 @@
         </label>
         <div>
           <div id="row">
-            <input type="button" value="5%" class="button" id="button15" onclick="get()"> </input>
-            <input type="button" value="10%" class="button"> </input>
-            <input type="button" value="15%" class="button"> </input>
+            <input type="button" value="5%" class="button" onclick="get5()" id="button5" >
+            <input type="button" value="10%" class="button" id="button10" onclick="get10()"> 
+            <input type="button" value="15%" class="button" id="button15" onclick="get15()"> 
           </div>
           <div id="row">
-            <input type="button" value="25%" class="button"> </input>
-            <input type="button" value="50%" class="button"> </input>
-            <input type="text" name="custom" class="buttong" placeholder="Custom"> </input>
+            <input type="button" value="25%" class="button"  id="button25" onclick="get25()"> 
+            <input type="button" value="50%" class="button"  id="button50" onclick="get50()"> 
+            <input type="number" name="custom" class="buttong" placeholder="Custom" id="custom" onclick="custom()">
           </div>
         </div>
 
       </div>
 
-      <div>
+      <div class="NumOfPdiv">
         <label>Number of People</label>
         <div>
+          <img src="../Assets/images/icon-person.svg" class="Inimg">
+
           <input type="number" name="" id="NumOfP" style="text-align:right ;" />
         </div>
       </div>
     </section>
     <aside id="aside">
       <div class="first">
+      <div class="tip">
         <span class="text">
           Tip Amount
+        </span>
+        <br>
+        <span class="texttwo">
           / person
         </span>
+      </div>
         <span class="value" id="valuet">
          $0.00
         </span>
       </div>
       <div class="second">
-        <span class="text1">
+      <div class="tot">
+      
+        <span class="texttot">
           Total
-          &nbsp;
+        </span>
+        <br>
+        <span class="textthree">
           / person
         </span>
+      </div>
         <span class="value" id="value">
           $0.00
         </span>
       </div>
       <div id="resetdiv">
-        <button id="reset">RESET</button>
+        <button id="reset" onclick="getreset()">RESET</button>
       </div>
     </aside>
   </main>
@@ -90,6 +104,6 @@
     Coded by <a href="#">Sultan Gbadebo</a>.
   </div>
 </body>
-<script src="./src/script.js"></script>
+<script src="./script.js"></script>
 
 </html
