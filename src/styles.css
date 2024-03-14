@@ -261,7 +261,7 @@ section{
 }
     
 
-#reset{
+#reset{}
     background-color: hsl(172, 67%, 45%);
     padding: 0px 140px 0px 140px;
     border-radius: 5px;
