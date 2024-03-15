@@ -90,7 +90,7 @@ section{
 }
 .icon {
     padding-right: 25px;
-    background: url("./images/icon-dollar.svg") no-repeat right;
+    /* background: url("./images/icon-dollar.svg") no-repeat right; */
     background-size: 20px;
   }
 .button:hover{
