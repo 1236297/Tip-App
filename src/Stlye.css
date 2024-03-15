@@ -47,10 +47,10 @@ section{
 }
 
 .Inimg{
+    padding-top: 12.5px;
+    padding-left: 10px;
+    width: 15px;
     position: absolute;
-    left: 10px;
-    top: 10px;
-    
 }
 #billIn{
     background-color:  hsl(189, 41%, 97%);
@@ -299,4 +299,3 @@ section{
 }
 
 }
-
